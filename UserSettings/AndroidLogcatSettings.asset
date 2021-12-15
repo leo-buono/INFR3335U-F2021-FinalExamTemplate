@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "RFCN90SP4FJ",
         "name": "com.DefaultCompany.FinalExamTemplate",
-        "processId": 11003,
+        "processId": 13304,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -24,6 +24,24 @@
             "deviceId": "RFCN90SP4FJ",
             "name": "com.DefaultCompany.FinalExamTemplate",
             "processId": 11003,
+            "exited": true
+        },
+        {
+            "deviceId": "RFCN90SP4FJ",
+            "name": "com.DefaultCompany.FinalExamTemplate",
+            "processId": 11111,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCN90SP4FJ",
+            "name": "com.DefaultCompany.FinalExamTemplate",
+            "processId": 10248,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCN90SP4FJ",
+            "name": "com.DefaultCompany.FinalExamTemplate",
+            "processId": 13304,
             "exited": false
         }
     ],

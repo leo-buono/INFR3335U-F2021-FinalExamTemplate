@@ -33,7 +33,6 @@ public class PanelHandler : MonoBehaviourPunCallbacks
     {
         LobbyPanel.SetActive(false);
         MainMenuPanel.SetActive(true);
-        PhotonNetwork.ConnectUsingSettings();
     }
     public GameObject LobbyPanel;
     public GameObject MainMenuPanel;
@@ -48,6 +47,8 @@ public class PanelHandler : MonoBehaviourPunCallbacks
     {
         LobbyPanel.SetActive(true);
         MainMenuPanel.SetActive(false);
+        PhotonNetwork.LoadLevel("Arena");
+        PhotonNetwork.JoinRoom(joinInput.text);
     }
 
     public void OnLeaveLobbyClick()

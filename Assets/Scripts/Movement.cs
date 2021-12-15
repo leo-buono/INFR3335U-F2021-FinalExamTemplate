@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class Movement : MonoBehaviour
 {
@@ -12,12 +13,12 @@ public class Movement : MonoBehaviour
     public Joystick rightStick;
     float currentAngle;
 
-    //public PhotonView view;
+    public PhotonView view;
 
     // Update is called once per frame
     void Update()
     {
-        if(true /*view.IsMine*/)
+        if(view.IsMine)
         {
         Vector2 currSpeed = new Vector2(player.GetComponent<Rigidbody>().velocity.x, player.GetComponent<Rigidbody>().velocity.z);
         Vector3 stickPos = new Vector3(leftStick.Horizontal, 0f, leftStick.Vertical);
